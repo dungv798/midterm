@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{82007C32-D140-4AB2-89D4-27E6FC52C94C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>MidTerm_Test_205052061</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Ictshop\config\applicationhost.config" />
+    <None Include=".vs\Ictshop\FileContentIndex\79228a61-60fa-4d62-84bb-9f0c8cb02617.vsidx" />
+    <None Include=".vs\Ictshop\FileContentIndex\8f778e6d-b374-4a3d-ab52-54389cb227f9.vsidx" />
+    <None Include=".vs\Ictshop\FileContentIndex\981767d4-4667-4f0f-aeba-eb959468ede2.vsidx" />
+    <None Include=".vs\Ictshop\FileContentIndex\ee08aa8d-6bcd-4816-9730-4473eb817ea0.vsidx" />
+    <None Include=".vs\Ictshop\FileContentIndex\read.lock" />
+    <None Include=".vs\Ictshop\v16\.suo" />
+    <None Include=".vs\Ictshop\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\Ictshop\v16\Server\sqlite3\storage.ide" />
+    <None Include=".vs\Ictshop\v17\.suo" />
+    <None Include="HinhanhSP\balo2.webp" />
+    <None Include="HinhanhSP\balo4.webp" />
+    <None Include="HinhanhSP\balo5.webp" />
+    <None Include="Ictshop\Areas\Admin\Views\Hangsanxuats\Create.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hangsanxuats\Delete.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hangsanxuats\Details.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hangsanxuats\Edit.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hangsanxuats\Index.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hedieuhanhs\Create.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hedieuhanhs\Delete.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hedieuhanhs\Details.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hedieuhanhs\Edit.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Hedieuhanhs\Index.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Home\Create.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Home\Delete.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Home\Details.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Home\Edit.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Home\Index.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Nguoidungs\Create.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Nguoidungs\Delete.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Nguoidungs\Details.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Nguoidungs\Edit.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Nguoidungs\Index.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\PhanQuyens\Create.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\PhanQuyens\Delete.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\PhanQuyens\Details.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\PhanQuyens\Edit.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\PhanQuyens\Index.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <None Include="Ictshop\Areas\Admin\Views\web.config" />
+    <None Include="Ictshop\Areas\Assets\.browserslistrc" />
+    <None Include="Ictshop\Areas\Assets\.travis.yml" />
+    <None Include="Ictshop\Areas\Assets\LICENSE" />
+    <None Include="Ictshop\Areas\Assets\package-lock.json" />
+    <None Include="Ictshop\Areas\Assets\package.json" />
+    <None Include="Ictshop\Areas\Assets\README.md" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\authentication.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\dashboard.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\error.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\footer.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\head\css.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\head\icons.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\head\meta.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\head\title.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\navigation\sidenav.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\navigation\topnav.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\layouts\includes\scripts.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\401.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\404.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\500.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\charts.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\includes\datatable.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\includes\page-header.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\index.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\layout-sidenav-light.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\layout-static.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\login.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\password.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\register.pug" />
+    <None Include="Ictshop\Areas\Assets\src\pug\pages\tables.pug" />
+    <None Include="Ictshop\Areas\Assets\src\scss\layout\_authentication.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\layout\_dashboard-default.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\layout\_dashboard-fixed.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\layout\_error.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\navigation\sidenav\_sidenav-dark.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\navigation\sidenav\_sidenav-light.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\navigation\sidenav\_sidenav.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\navigation\_nav.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\navigation\_topnav.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\styles.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\variables\_navigation.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\variables\_spacing.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\_global.scss" />
+    <None Include="Ictshop\Areas\Assets\src\scss\_variables.scss" />
+    <None Include="Ictshop\bin\Ictshop.dll.config" />
+    <None Include="Ictshop\bin\roslyn\csc.exe.config" />
+    <None Include="Ictshop\bin\roslyn\csc.rsp" />
+    <None Include="Ictshop\bin\roslyn\csi.rsp" />
+    <None Include="Ictshop\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <None Include="Ictshop\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <None Include="Ictshop\bin\roslyn\vbc.exe.config" />
+    <None Include="Ictshop\bin\roslyn\vbc.rsp" />
+    <None Include="Ictshop\bin\roslyn\VBCSCompiler.exe.config" />
+    <None Include="Ictshop\Content\bootstrap-theme.css.map" />
+    <None Include="Ictshop\Content\bootstrap-theme.min.css.map" />
+    <None Include="Ictshop\Content\bootstrap.css.map" />
+    <None Include="Ictshop\Content\bootstrap.min.css.map" />
+    <None Include="Ictshop\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Ictshop\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Ictshop\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Ictshop\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Ictshop\HinhanhSP\balo2.webp" />
+    <None Include="Ictshop\HinhanhSP\balo4.webp" />
+    <None Include="Ictshop\HinhanhSP\balo5.webp" />
+    <None Include="Ictshop\Ictshop.csproj" />
+    <None Include="Ictshop\libman.json" />
+    <EntityDeploy Include="Ictshop\Models\QLdienthoai1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLdienthoai1.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Ictshop\Models\QLdienthoai1.edmx.diagram">
+      <DependentUpon>QLdienthoai1.edmx</DependentUpon>
+    </None>
+    <None Include="Ictshop\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Ictshop\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Areas\Admin\Models\QLdt.csdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Areas\Admin\Models\QLdt.msl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Areas\Admin\Models\QLdt.ssdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\Ictshop.csdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\Ictshop.msl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\Ictshop.ssdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\Qlbanhang.csdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\Qlbanhang.msl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\Qlbanhang.ssdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\QLdienthoai.csdl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\QLdienthoai.msl" />
+    <None Include="Ictshop\obj\Debug\edmxResourcesToEmbed\Models\QLdienthoai.ssdl" />
+    <None Include="Ictshop\obj\Debug\Ictshop.csproj.AssemblyReference.cache" />
+    <None Include="Ictshop\obj\Debug\Ictshop.csproj.CopyComplete" />
+    <None Include="Ictshop\obj\Debug\Ictshop.csproj.CoreCompileInputs.cache" />
+    <None Include="Ictshop\obj\Debug\Ictshop.csproj.GenerateResource.cache" />
+    <None Include="Ictshop\obj\Debug\Ictshop.csprojAssemblyReference.cache" />
+    <None Include="Ictshop\packages.config" />
+    <None Include="Ictshop\Scripts\jquery-3.4.1.min.map" />
+    <None Include="Ictshop\Scripts\jquery-3.4.1.slim.min.map" />
+    <None Include="Ictshop\Views\Danhmuc\DanhmucPartial.cshtml" />
+    <None Include="Ictshop\Views\Donhangs\Details.cshtml" />
+    <None Include="Ictshop\Views\Donhangs\Index.cshtml" />
+    <None Include="Ictshop\Views\GioHang\GioHang.cshtml" />
+    <None Include="Ictshop\Views\GioHang\GioHangPartial.cshtml" />
+    <None Include="Ictshop\Views\GioHang\SuaGioHang.cshtml" />
+    <None Include="Ictshop\Views\Home\About.cshtml" />
+    <None Include="Ictshop\Views\Home\Contact.cshtml" />
+    <None Include="Ictshop\Views\Home\Index.cshtml" />
+    <None Include="Ictshop\Views\Home\SlidePartial.cshtml" />
+    <None Include="Ictshop\Views\Sanpham\dtiphonePartial.cshtml" />
+    <None Include="Ictshop\Views\Sanpham\dtsamsungpartial.cshtml" />
+    <None Include="Ictshop\Views\Sanpham\dtxiaomipartial.cshtml" />
+    <None Include="Ictshop\Views\Sanpham\xemchitiet.cshtml" />
+    <None Include="Ictshop\Views\Shared\Error.cshtml" />
+    <None Include="Ictshop\Views\Shared\_Layout.cshtml" />
+    <None Include="Ictshop\Views\User\Dangky.cshtml" />
+    <None Include="Ictshop\Views\User\Dangnhap.cshtml" />
+    <None Include="Ictshop\Views\User\Test.cshtml" />
+    <None Include="Ictshop\Views\Web.config" />
+    <None Include="Ictshop\Views\_ViewStart.cshtml" />
+    <None Include="Ictshop\Web.Config" />
+    <None Include="Ictshop\Web.Debug.config" />
+    <None Include="Ictshop\Web.Release.config" />
+    <None Include="packages\Antlr.3.5.0.2\.signature.p7s" />
+    <None Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
+    <None Include="packages\bootstrap.3.4.1\.signature.p7s" />
+    <None Include="packages\bootstrap.3.4.1\bootstrap.3.4.1.nupkg" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.css.map" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.min.css.map" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.css.map" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.min.css.map" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.css.map" />
+    <None Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.min.css.map" />
+    <None Include="packages\bootstrap.3.4.1\content\Content\bootstrap.css.map" />
+    <None Include="packages\bootstrap.3.4.1\content\Content\bootstrap.min.css.map" />
+    <None Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages\EntityFramework.6.1.3\.signature.p7s" />
+    <None Include="packages\EntityFramework.6.1.3\content\App.config.transform" />
+    <None Include="packages\EntityFramework.6.1.3\content\Web.config.transform" />
+    <None Include="packages\EntityFramework.6.1.3\EntityFramework.6.1.3.nupkg" />
+    <None Include="packages\EntityFramework.6.1.3\tools\EntityFramework.psd1" />
+    <None Include="packages\EntityFramework.6.1.3\tools\EntityFramework.psm1" />
+    <None Include="packages\EntityFramework.6.1.3\tools\init.ps1" />
+    <None Include="packages\EntityFramework.6.1.3\tools\install.ps1" />
+    <None Include="packages\jQuery.3.4.1\.signature.p7s" />
+    <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.map" />
+    <None Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.min.map" />
+    <None Include="packages\jQuery.3.4.1\jQuery.3.4.1.nupkg" />
+    <None Include="packages\jQuery.3.4.1\Tools\common.ps1" />
+    <None Include="packages\jQuery.3.4.1\Tools\install.ps1" />
+    <None Include="packages\jQuery.3.4.1\Tools\uninstall.ps1" />
+    <None Include="packages\jQuery.Validation.1.17.0\.signature.p7s" />
+    <None Include="packages\jQuery.Validation.1.17.0\jQuery.Validation.1.17.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Mvc.5.2.7\.signature.p7s" />
+    <None Include="packages\Microsoft.AspNet.Mvc.5.2.7\Content\Web.config.install.xdt" />
+    <None Include="packages\Microsoft.AspNet.Mvc.5.2.7\Content\Web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.AspNet.Mvc.5.2.7\Microsoft.AspNet.Mvc.5.2.7.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Razor.3.2.7\.signature.p7s" />
+    <None Include="packages\Microsoft.AspNet.Razor.3.2.7\Microsoft.AspNet.Razor.3.2.7.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\.signature.p7s" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebPages.3.2.7\.signature.p7s" />
+    <None Include="packages\Microsoft.AspNet.WebPages.3.2.7\Content\Web.config.install.xdt" />
+    <None Include="packages\Microsoft.AspNet.WebPages.3.2.7\Content\Web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.AspNet.WebPages.3.2.7\Microsoft.AspNet.WebPages.3.2.7.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\install.ps1" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\uninstall.ps1" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CSharp.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.VisualBasic.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CSharp.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Managed.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.VisualBasic.Core.targets" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
+    <None Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\.signature.p7s" />
+    <None Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6.nupkg" />
+    <None Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\.signature.p7s" />
+    <None Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\Microsoft.jQuery.Unobtrusive.Validation.3.2.11.nupkg" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\.signature.p7s" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <None Include="packages\Modernizr.2.8.3\.signature.p7s" />
+    <None Include="packages\Modernizr.2.8.3\Modernizr.2.8.3.nupkg" />
+    <None Include="packages\Modernizr.2.8.3\Tools\common.ps1" />
+    <None Include="packages\Modernizr.2.8.3\Tools\install.ps1" />
+    <None Include="packages\Modernizr.2.8.3\Tools\uninstall.ps1" />
+    <None Include="packages\Newtonsoft.Json.12.0.2\.signature.p7s" />
+    <None Include="packages\Newtonsoft.Json.12.0.2\LICENSE.md" />
+    <None Include="packages\Newtonsoft.Json.12.0.2\Newtonsoft.Json.12.0.2.nupkg" />
+    <None Include="packages\PagedList.1.17.0.0\.signature.p7s" />
+    <None Include="packages\PagedList.1.17.0.0\PagedList.1.17.0.0.nupkg" />
+    <None Include="packages\PagedList.Mvc.4.5.0.0\.signature.p7s" />
+    <None Include="packages\PagedList.Mvc.4.5.0.0\PagedList.Mvc.4.5.0.0.nupkg" />
+    <None Include="packages\WebGrease.1.6.0\.signature.p7s" />
+    <None Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".vs\Ictshop\v17\HierarchyCache.v1.txt" />
+    <Content Include="Database\database\database_new_updatemuahang\QLdienthoai.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\database\database_new_updatemuahang\QLdienthoai_log.ldf">
+      <DependentUpon>QLdienthoai.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\database\QLdienthoai.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\database\QLdienthoai_log.ldf">
+      <DependentUpon>QLdienthoai.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\db_ictshop.sql" />
+    <Content Include="Database\db_ictshop_new_updatemuahang.sql" />
+    <Content Include="HinhanhSP\balo1.jpg" />
+    <Content Include="HinhanhSP\balo3.jpg" />
+    <Content Include="HinhanhSP\balo6.jpg" />
+    <Content Include="HinhanhSP\balo7.jpg" />
+    <Content Include="HinhanhSP\balo8.jpg" />
+    <Content Include="HinhanhSP\balo9.jpg" />
+    <Content Include="HinhanhSP\ban1.jpg" />
+    <Content Include="HinhanhSP\ban123.png" />
+    <Content Include="HinhanhSP\ban2.jpg" />
+    <Content Include="HinhanhSP\banner1.png" />
+    <Content Include="HinhanhSP\bphone.jpg" />
+    <Content Include="HinhanhSP\bphonea85.png" />
+    <Content Include="HinhanhSP\i14.jpg" />
+    <Content Include="HinhanhSP\ip14.jpg" />
+    <Content Include="HinhanhSP\ip14max.jpg" />
+    <Content Include="HinhanhSP\ip14pro.jpg" />
+    <Content Include="HinhanhSP\ip14promax.jpg" />
+    <Content Include="HinhanhSP\ip3.jpg" />
+    <Content Include="HinhanhSP\ip4.jpg" />
+    <Content Include="HinhanhSP\ip5.jpg" />
+    <Content Include="HinhanhSP\ip6.jpg" />
+    <Content Include="HinhanhSP\ip7.jpg" />
+    <Content Include="HinhanhSP\iphone14.png" />
+    <Content Include="HinhanhSP\logo1.jpg" />
+    <Content Include="HinhanhSP\logo1.png" />
+    <Content Include="HinhanhSP\logoCPS.png" />
+    <Content Include="HinhanhSP\mi31.jpg" />
+    <Content Include="HinhanhSP\mi4.jpg" />
+    <Content Include="HinhanhSP\mi5.jpg" />
+    <Content Include="HinhanhSP\mi6.jpg" />
+    <Content Include="HinhanhSP\mi7.jpg" />
+    <Content Include="HinhanhSP\mi8.jpg" />
+    <Content Include="HinhanhSP\qa1.jpg" />
+    <Content Include="HinhanhSP\qa2.jpg" />
+    <Content Include="HinhanhSP\qa3.jpg" />
+    <Content Include="HinhanhSP\qa4.png" />
+    <Content Include="HinhanhSP\qc.jpg" />
+    <Content Include="HinhanhSP\qc2.jfif" />
+    <Content Include="HinhanhSP\qc3.gif" />
+    <Content Include="HinhanhSP\qc3.jfif" />
+    <Content Include="HinhanhSP\spnb1.png" />
+    <Content Include="HinhanhSP\spnb2.png" />
+    <Content Include="HinhanhSP\spnb3.png" />
+    <Content Include="HinhanhSP\ss1.jpg" />
+    <Content Include="HinhanhSP\ss2.jpg" />
+    <Content Include="HinhanhSP\ss3.jpg" />
+    <Content Include="HinhanhSP\ss4.jpg" />
+    <Content Include="HinhanhSP\ss5.jpg" />
+    <Content Include="HinhanhSP\tui1.jpg" />
+    <Content Include="HinhanhSP\tui2.jpg" />
+    <Content Include="HinhanhSP\tui3.jpg" />
+    <Content Include="HinhanhSP\tui4.jpg" />
+    <Content Include="Ictshop\App_Start\BundleConfig.cs" />
+    <Content Include="Ictshop\App_Start\FilterConfig.cs" />
+    <Content Include="Ictshop\App_Start\RouteConfig.cs" />
+    <Content Include="Ictshop\Areas\Admin\AdminAreaRegistration.cs" />
+    <Content Include="Ictshop\Areas\Admin\Controllers\HangsanxuatsController.cs" />
+    <Content Include="Ictshop\Areas\Admin\Controllers\HedieuhanhsController.cs" />
+    <Content Include="Ictshop\Areas\Admin\Controllers\HomeController.cs" />
+    <Content Include="Ictshop\Areas\Admin\Controllers\NguoidungsController.cs" />
+    <Content Include="Ictshop\Areas\Admin\Controllers\PhanQuyensController.cs" />
+    <Content Include="Ictshop\Areas\Assets\.gitignore" />
+    <Content Include="Ictshop\Areas\Assets\dist\401.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\404.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\500.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\assets\demo\chart-area-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\dist\assets\demo\chart-bar-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\dist\assets\demo\chart-pie-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\dist\assets\demo\datatables-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\dist\assets\img\error-404-monochrome.svg" />
+    <Content Include="Ictshop\Areas\Assets\dist\charts.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\css\styles.css" />
+    <Content Include="Ictshop\Areas\Assets\dist\index.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\js\scripts.js" />
+    <Content Include="Ictshop\Areas\Assets\dist\layout-sidenav-light.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\layout-static.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\login.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\password.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\register.html" />
+    <Content Include="Ictshop\Areas\Assets\dist\tables.html" />
+    <Content Include="Ictshop\Areas\Assets\scripts\build-assets.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\build-pug.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\build-scripts.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\build-scss.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\clean.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\render-assets.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\render-pug.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\render-scripts.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\render-scss.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\sb-watch.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\start-debug.js" />
+    <Content Include="Ictshop\Areas\Assets\scripts\start.js" />
+    <Content Include="Ictshop\Areas\Assets\src\assets\demo\chart-area-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\src\assets\demo\chart-bar-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\src\assets\demo\chart-pie-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\src\assets\demo\datatables-demo.js" />
+    <Content Include="Ictshop\Areas\Assets\src\assets\img\error-404-monochrome.svg" />
+    <Content Include="Ictshop\Areas\Assets\src\js\scripts.js" />
+    <Content Include="Ictshop\bin\Antlr3.Runtime.dll" />
+    <Content Include="Ictshop\bin\Antlr3.Runtime.pdb" />
+    <Content Include="Ictshop\bin\EntityFramework.dll" />
+    <Content Include="Ictshop\bin\EntityFramework.SqlServer.dll" />
+    <Content Include="Ictshop\bin\EntityFramework.SqlServer.xml" />
+    <Content Include="Ictshop\bin\EntityFramework.xml" />
+    <Content Include="Ictshop\bin\Ictshop.dll" />
+    <Content Include="Ictshop\bin\Ictshop.pdb" />
+    <Content Include="Ictshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="Ictshop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="Ictshop\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Ictshop\bin\Newtonsoft.Json.dll" />
+    <Content Include="Ictshop\bin\Newtonsoft.Json.xml" />
+    <Content Include="Ictshop\bin\PagedList.dll" />
+    <Content Include="Ictshop\bin\PagedList.Mvc.dll" />
+    <Content Include="Ictshop\bin\PagedList.Mvc.xml" />
+    <Content Include="Ictshop\bin\PagedList.xml" />
+    <Content Include="Ictshop\bin\roslyn\csc.exe" />
+    <Content Include="Ictshop\bin\roslyn\csi.exe" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="Ictshop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="Ictshop\bin\roslyn\System.AppContext.dll" />
+    <Content Include="Ictshop\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="Ictshop\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="Ictshop\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="Ictshop\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="Ictshop\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="Ictshop\bin\roslyn\vbc.exe" />
+    <Content Include="Ictshop\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="Ictshop\bin\System.Web.Helpers.dll" />
+    <Content Include="Ictshop\bin\System.Web.Helpers.xml" />
+    <Content Include="Ictshop\bin\System.Web.Mvc.dll" />
+    <Content Include="Ictshop\bin\System.Web.Mvc.xml" />
+    <Content Include="Ictshop\bin\System.Web.Optimization.dll" />
+    <Content Include="Ictshop\bin\System.Web.Optimization.xml" />
+    <Content Include="Ictshop\bin\System.Web.Razor.dll" />
+    <Content Include="Ictshop\bin\System.Web.Razor.xml" />
+    <Content Include="Ictshop\bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="Ictshop\bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="Ictshop\bin\System.Web.WebPages.dll" />
+    <Content Include="Ictshop\bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="Ictshop\bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="Ictshop\bin\System.Web.WebPages.xml" />
+    <Content Include="Ictshop\bin\WebGrease.dll" />
+    <Content Include="Ictshop\Content\bootstrap-theme.css" />
+    <Content Include="Ictshop\Content\bootstrap-theme.min.css" />
+    <Content Include="Ictshop\Content\bootstrap.css" />
+    <Content Include="Ictshop\Content\bootstrap.min.css" />
+    <Content Include="Ictshop\Content\PagedList.css" />
+    <Content Include="Ictshop\Content\Site.css" />
+    <Content Include="Ictshop\Content\Slide.css" />
+    <Content Include="Ictshop\Content\Style.css" />
+    <Content Include="Ictshop\Controllers\DanhmucController.cs" />
+    <Content Include="Ictshop\Controllers\DonhangsController.cs" />
+    <Content Include="Ictshop\Controllers\GioHangController.cs" />
+    <Content Include="Ictshop\Controllers\HomeController.cs" />
+    <Content Include="Ictshop\Controllers\SanphamController.cs" />
+    <Content Include="Ictshop\Controllers\UserController.cs" />
+    <Content Include="Ictshop\favicon.ico" />
+    <Content Include="Ictshop\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Ictshop\Global.asax" />
+    <Content Include="Ictshop\Global.asax.cs" />
+    <Content Include="Ictshop\HinhanhSP\12.htm" />
+    <Content Include="Ictshop\HinhanhSP\12.jpg" />
+    <Content Include="Ictshop\HinhanhSP\123.jpg" />
+    <Content Include="Ictshop\HinhanhSP\321.jpg" />
+    <Content Include="Ictshop\HinhanhSP\balo1.jpg" />
+    <Content Include="Ictshop\HinhanhSP\balo3.jpg" />
+    <Content Include="Ictshop\HinhanhSP\balo6.jpg" />
+    <Content Include="Ictshop\HinhanhSP\balo7.jpg" />
+    <Content Include="Ictshop\HinhanhSP\balo8.jpg" />
+    <Content Include="Ictshop\HinhanhSP\balo9.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ban1.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ban123.png" />
+    <Content Include="Ictshop\HinhanhSP\ban2.jpg" />
+    <Content Include="Ictshop\HinhanhSP\banner1.png" />
+    <Content Include="Ictshop\HinhanhSP\bphone.jpg" />
+    <Content Include="Ictshop\HinhanhSP\bphonea85.png" />
+    <Content Include="Ictshop\HinhanhSP\i14.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip14max.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip14prm.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip14pro.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip14promax.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip3.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip4.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip5.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip6.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ip7.jpg" />
+    <Content Include="Ictshop\HinhanhSP\logo1.jpg" />
+    <Content Include="Ictshop\HinhanhSP\logo1.png" />
+    <Content Include="Ictshop\HinhanhSP\mi11.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi115.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi12.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi12U.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi4.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi5.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi6.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi7.jpg" />
+    <Content Include="Ictshop\HinhanhSP\mi8.jpg" />
+    <Content Include="Ictshop\HinhanhSP\qa1.jpg" />
+    <Content Include="Ictshop\HinhanhSP\qa2.jpg" />
+    <Content Include="Ictshop\HinhanhSP\qa3.jpg" />
+    <Content Include="Ictshop\HinhanhSP\qa4.png" />
+    <Content Include="Ictshop\HinhanhSP\qc.jpg" />
+    <Content Include="Ictshop\HinhanhSP\qc3.gif" />
+    <Content Include="Ictshop\HinhanhSP\spnb1.png" />
+    <Content Include="Ictshop\HinhanhSP\spnb2.png" />
+    <Content Include="Ictshop\HinhanhSP\spnb3.png" />
+    <Content Include="Ictshop\HinhanhSP\ss1.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ss2.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ss22.htm" />
+    <Content Include="Ictshop\HinhanhSP\ss22.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ss3.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ss4.jpg" />
+    <Content Include="Ictshop\HinhanhSP\ss5.jpg" />
+    <Content Include="Ictshop\HinhanhSP\tui1.jpg" />
+    <Content Include="Ictshop\HinhanhSP\tui2.jpg" />
+    <Content Include="Ictshop\HinhanhSP\tui3.jpg" />
+    <Content Include="Ictshop\HinhanhSP\tui4.jpg" />
+    <Content Include="Ictshop\HinhanhSP\zflip.jpg" />
+    <Content Include="Ictshop\HinhanhSP\zflip2.jpg" />
+    <Content Include="Ictshop\HinhanhSP\zfold2.jpg" />
+    <Content Include="Ictshop\Ictshop.csproj.user" />
+    <Content Include="Ictshop\Migrations\202107271655114_AddThanhtien.cs" />
+    <Content Include="Ictshop\Migrations\202107271655114_AddThanhtien.Designer.cs" />
+    <Content Include="Ictshop\Migrations\Configuration.cs" />
+    <Content Include="Ictshop\Models\Chitietdonhang.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\Donhang.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\GioHang.cs" />
+    <Content Include="Ictshop\Models\Hangsanxuat.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\Hedieuhanh.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\Khachhang.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\LoginModel.cs" />
+    <Content Include="Ictshop\Models\Nguoidung.cs" />
+    <Content Include="Ictshop\Models\PhanQuyen.cs" />
+    <Content Include="Ictshop\Models\Qlbanhang.cs" />
+    <Content Include="Ictshop\Models\QLdienthoai1.Context.cs" />
+    <Content Include="Ictshop\Models\QLdienthoai1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QLdienthoai1.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Ictshop\Models\QLdienthoai1.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLdienthoai1.Context.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\QLdienthoai1.cs" />
+    <Content Include="Ictshop\Models\QLdienthoai1.Designer.cs" />
+    <Content Include="Ictshop\Models\QLdienthoai1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QLdienthoai11.cs</LastGenOutput>
+    </Content>
+    <Content Include="Ictshop\Models\QLdienthoai11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\Sanpham.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\sysdiagram.cs">
+      <DependentUpon>QLdienthoai1.tt</DependentUpon>
+    </Content>
+    <Content Include="Ictshop\Models\sysdiagrams.cs" />
+    <Content Include="Ictshop\obj\Debug\.NETFramework,Version=v4.5.1.AssemblyAttributes.cs" />
+    <Content Include="Ictshop\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Content Include="Ictshop\obj\Debug\Ictshop.csproj.FileListAbsolute.txt" />
+    <Content Include="Ictshop\obj\Debug\Ictshop.dll" />
+    <Content Include="Ictshop\obj\Debug\Ictshop.pdb" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Areas.Admin.Models.QLdt.Context.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Areas.Admin.Models.QLdt.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Areas.Admin.Models.QLdt.Designer.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Ictshop.Context.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Ictshop.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Ictshop.Designer.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Qlbanhang.Context.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Qlbanhang.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Qlbanhang.Designer.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Qldienthoai.Context.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Qldienthoai.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.Qldienthoai.Designer.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.QLdienthoai1.Context.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.QLdienthoai1.cs.dll" />
+    <Content Include="Ictshop\obj\Debug\TempPE\Models.QLdienthoai1.Designer.cs.dll" />
+    <Content Include="Ictshop\Properties\AssemblyInfo.cs" />
+    <Content Include="Ictshop\Scripts\bootstrap.js" />
+    <Content Include="Ictshop\Scripts\bootstrap.min.js" />
+    <Content Include="Ictshop\Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Ictshop\Scripts\jquery-3.4.1.js" />
+    <Content Include="Ictshop\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Ictshop\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Ictshop\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Ictshop\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Ictshop\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Ictshop\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Ictshop\Scripts\jquery.validate.js" />
+    <Content Include="Ictshop\Scripts\jquery.validate.min.js" />
+    <Content Include="Ictshop\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Ictshop\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Ictshop\Scripts\modernizr-2.8.3.js" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap-theme.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.3.4.1\contentFiles\Scripts\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap-theme.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.3.4.1\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages\bootstrap.3.4.1\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.3.4.1\content\Scripts\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.3.4.1\LICENSE.txt" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\about_EntityFramework.help.txt" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\migrate.exe" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1-vsdoc.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="packages\jQuery.3.4.1\Content\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="packages\jQuery.3.4.1\Tools\jquery-3.4.1.intellisense.js" />
+    <Content Include="packages\jQuery.Validation.1.17.0\Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="packages\jQuery.Validation.1.17.0\Content\Scripts\jquery.validate.js" />
+    <Content Include="packages\jQuery.Validation.1.17.0\Content\Scripts\jquery.validate.min.js" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll" />
+    <Content Include="packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.xml" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Console.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Globalization.Calendars.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.ZipFile.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Http.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Sockets.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\Content\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Ajax.3.2.6\Content\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\Content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.11\Content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Modernizr.2.8.3\Content\Scripts\modernizr-2.8.3.js" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.3\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard1.3\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.12.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\PagedList.1.17.0.0\lib\net40\PagedList.dll" />
+    <Content Include="packages\PagedList.1.17.0.0\lib\net40\PagedList.xml" />
+    <Content Include="packages\PagedList.Mvc.4.5.0.0\Content\Content\PagedList.css" />
+    <Content Include="packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll" />
+    <Content Include="packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.XML" />
+    <Content Include="packages\WebGrease.1.6.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ictshop\Migrations\202107271655114_AddThanhtien.resx" />
+    <EmbeddedResource Include="Ictshop\obj\Debug\Ictshop.Migrations.AddThanhtien.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ictshop\Models\QLdienthoai1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLdienthoai1.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Ictshop\FileContentIndex\merges\" />
+    <Folder Include=".vs\MidTerm_Test_205052061\v17\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
